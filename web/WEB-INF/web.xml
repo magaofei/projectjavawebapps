@@ -5,14 +5,23 @@
             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
         version="3.1">
     <display-name>Hello World Application</display-name>
-    <servlet>
-        <servlet-name>helloServlet</servlet-name>
-        <servlet-class>com.mark.HelloServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>helloServlet</servlet-name>-->
+        <!--<servlet-class>com.mark.HelloServlet</servlet-class>-->
+        <!--<load-on-startup>1</load-on-startup>-->
+    <!--</servlet>-->
 
-    <servlet-mapping>
-        <servlet-name>helloServlet</servlet-name>
-        <url-pattern>/greeting</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>helloServlet</servlet-name>-->
+        <!--<url-pattern>/greeting</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <context-param>
+        <param-name>settingOne</param-name>
+        <param-value>foo</param-value>
+    </context-param>
+    <context-param>
+        <param-name>settingTwo</param-name>
+        <param-value>bar</param-value>
+    </context-param>
 </web-app>
